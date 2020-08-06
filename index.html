@@ -55,11 +55,13 @@
         element: "li"
     },
     noResults: () => {                     // Action script on noResults      | (Optional)
-        const result = document.createElement("li");
+        /*const result = document.createElement("li");
         result.setAttribute("class", "no_result");
         result.setAttribute("tabindex", "1");
         result.innerHTML = "No Results";
         document.querySelector("#autoComplete_list").appendChild(result);
+		*/
+		document.getElementById('result').src = './notahotdog.jpg';
     },
     onSelection: feedback => {             // Action script onSelection event | (Optional)
         document.getElementById('result').src = feedback.selection.value.link + 'embed';
